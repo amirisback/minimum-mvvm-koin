@@ -5,7 +5,7 @@
 - Lifecycle
 
 ## Result
-<img width="200px" height="360px" src="https://raw.githubusercontent.com/amirisback/minimum-MVVM/master/docs/image/ss.png">
+<img width="200px" height="360px" src="https://raw.githubusercontent.com/amirisback/minimum-mvvm/master/docs/image/ss.png">
 
 ## Colaborator
 Very open to anyone, I'll write your name under this, please contribute by sending an email to me
