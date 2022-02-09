@@ -25,4 +25,4 @@ Waiting for your contribute
 - Please enjoy and don't forget fork and give a star
 - Don't Forget Follow My Github Account
 
-![ScreenShot](https://raw.githubusercontent.com/amirisback/minimum-mvvm/master/docs/image/ss.png?raw=true)
+![ScreenShot](https://raw.githubusercontent.com/amirisback/minimum-mvvm/master/docs/image/mad_score.png?raw=true)
