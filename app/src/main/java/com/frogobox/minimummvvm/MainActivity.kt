@@ -1,15 +1,10 @@
 package com.frogobox.minimummvvm
 
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.frogobox.minimummvvm.databinding.ActivityMainBinding
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class MainActivity : AppCompatActivity(), MainItemListener {
@@ -27,7 +22,7 @@ class MainActivity : AppCompatActivity(), MainItemListener {
     private fun setupViewModel() {
         mainViewModel.apply {
             setupData()
-            listMainData.observe(this@MainActivity) {
+            mainData.observe(this@MainActivity) {
                 setupRV(it)
             }
         }
