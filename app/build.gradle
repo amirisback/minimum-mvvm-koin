@@ -5,12 +5,13 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    namespace 'com.frogobox.minimummvvm'
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.frogobox.minimummvvm"
         minSdk 21
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -41,32 +42,33 @@ android {
 
 dependencies {
 
-    implementation "androidx.core:core-ktx:1.7.0"
-    implementation "androidx.appcompat:appcompat:1.4.1"
-    implementation "com.google.android.material:material:1.5.0"
-    implementation "androidx.constraintlayout:constraintlayout:2.1.3"
+    implementation "androidx.core:core-ktx:1.9.0"
+    implementation "androidx.appcompat:appcompat:1.6.0"
+    implementation "androidx.work:work-runtime-ktx:2.7.1"
+    implementation "com.google.android.material:material:1.7.0"
+    implementation "androidx.constraintlayout:constraintlayout:2.1.4"
 
     // implementation coroutines
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1"
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0-native-mt"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
 
-    implementation "androidx.lifecycle:lifecycle-process:2.4.0"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
-    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.0"
+    implementation "androidx.lifecycle:lifecycle-process:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1"
 
-    implementation "com.github.bumptech.glide:glide:4.12.0"
+    implementation "com.github.bumptech.glide:glide:4.14.2"
 
     // Koin for Android
-    implementation "io.insert-koin:koin-core:3.1.4"  // Koin core features
-    implementation "io.insert-koin:koin-android:3.1.4" // Koin main features for Android (Scope,ViewModel ...)
-    implementation "io.insert-koin:koin-android-compat:3.1.4" // Koin Java Compatibility
+    implementation "io.insert-koin:koin-core:3.3.2"  // Koin core features
+    implementation "io.insert-koin:koin-android:3.3.2" // Koin main features for Android (Scope,ViewModel ...)
+    implementation "io.insert-koin:koin-android-compat:3.3.2" // Koin Java Compatibility
 
-    kapt "com.github.bumptech.glide:compiler:4.12.0"
-    kapt "androidx.lifecycle:lifecycle-compiler:2.4.0"
+    kapt "com.github.bumptech.glide:compiler:4.14.2"
+    kapt "androidx.lifecycle:lifecycle-compiler:2.5.1"
 
     testImplementation "io.insert-koin:koin-test:3.1.4"
     testImplementation "junit:junit:4.13.2"
-    androidTestImplementation "androidx.test.ext:junit:1.1.3"
-    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+    androidTestImplementation "androidx.test.ext:junit:1.1.5"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.5.1"
 }
